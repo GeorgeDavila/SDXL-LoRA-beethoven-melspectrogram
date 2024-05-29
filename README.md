@@ -7,6 +7,11 @@ SDXL LoRAs can produce great image results. But can they produce coherent music 
 
 Trigger word: SPECTROGRAM
 
+- [X] Audio to image spectrogram scripts
+- [X] Model trained
+- [X] Model deployed to replicate
+- [ ] Image spectrogram to audio scripts
+
 ## Make Spectrograms
 
 Place audio data in directory `audio_data` and run `python makeMels.py` to create spectrograms which will be placed in `mels` directory. 
