@@ -9,7 +9,7 @@ from typing import List
 from diffusers import StableDiffusionXLPipeline
 
 base_model_path = "stabilityai/stable-diffusion-xl-base-1.0"
-LoRA_PATH = "GDavila/sdxl-basquiat"
+LoRA_PATH = "GDavila/sdxl-beethoven-spectrograms"
 LoRA_file = "lora.safetensors"
 device = "cuda"
 MODEL_CACHE = "model-cache"
@@ -36,8 +36,8 @@ class Predictor(BasePredictor):
     def predict(
         self,
         myprompt: str = Input(
-            description="Input prompt (BASQUIAT is the style trigger word)",
-            default="A BASQUIAT painting"
+            description="Input prompt (SPECTROGRAM is the style trigger word)",
+            default="A SPECTROGRAM image"
         ),
         promptAddendum: str = Input(
             description="Extra terms to add to end of prompt",
@@ -45,19 +45,19 @@ class Predictor(BasePredictor):
         ),
         negative_prompt: str = Input(
             description="Negative Prompt",
-            default=""
+            default="fuzzy, lone pixels"
         ),
         outWidth: int = Input(
             description="width of output",
             ge=128,
             le=4096,
-            default=1024,
+            default=1024, # 640
         ),
         outHeight: int = Input(
             description="height of output",
             ge=128,
             le=4096,
-            default=1024,
+            default=1024, # 480
         ),
         guidanceScale: float = Input(
             description="Guidance scale (influence of input text on generation)",

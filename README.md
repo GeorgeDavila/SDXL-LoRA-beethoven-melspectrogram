@@ -2,6 +2,16 @@
 
 SDXL LoRAs can produce great image results. But can they produce coherent music by generating mel spectrograms(basically image versions of songs)? That's what we're experimenting with here.
 
+- Replicate API: https://replicate.com/georgedavila/sdxl-beethoven-spectrograms-lora
+- Model: https://huggingface.co/GDavila/sdxl-beethoven-spectrograms
+
+## Make Spectrograms
+
+Place audio data in directory `audio_data` and run `python makeMels.py` to create spectrograms which will be placed in `mels` directory. 
+
+## Training
+Zip `mels` directory and use [sdxl-lora-customize-training](https://replicate.com/zylim0702/sdxl-lora-customize-training) for easy lora training. 
+
 
 ### References 
 

@@ -1,3 +1,5 @@
+*.zip
+
 __pycache__
 .cog
 model-cache

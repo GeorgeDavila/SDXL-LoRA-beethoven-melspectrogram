@@ -8,6 +8,8 @@ import librosa.display
 import numpy as np
 import soundfile as sf
 
+## NOT FUNCTIONAL YET 
+
 audioDataDir = "audio_data"
 audioFiles = os.listdir(audioDataDir)
 
