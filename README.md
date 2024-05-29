@@ -30,6 +30,8 @@ Zip `mels` directory and use [sdxl-lora-customize-training](https://replicate.co
 
 ## Results
 
+Clearly we can produce coherent spectorgrams using SDXL LoRAs, its not simply noise otherwise we wouldn't see clear waveforms and the black on top orange on bottom type structure. In [example 7](https://github.com/GeorgeDavila/SDXL-LoRA-beethoven-melspectrogram/blob/main/results/res7.png) we can see stratification layers ie striped bands emerge in the waveforms. Notably the swirls are a characteristic sign that stable diffusion can't fully denoise a region, so it's not necessarily fully denoising the wave forms. See [here](https://upload.wikimedia.org/wikipedia/commons/9/99/X-Y_plot_of_algorithmically-generated_AI_art_of_European-style_castle_in_Japan_demonstrating_DDIM_diffusion_steps.png) for an example of SD denoising - those swirls are artifacts of step 1. 
+
 [Examples](https://replicate.com/georgedavila/sdxl-beethoven-spectrograms-lora/examples)
 
 - 1) Prompt: "A SPECTROGRAM image", No Negative Prompt, width=1024, height=1024, guidanceScale=7.5, num_inference_steps=50
