@@ -25,10 +25,23 @@ Zip `mels` directory and use [sdxl-lora-customize-training](https://replicate.co
 
 ## Results
 
-- Prompt: "A SPECTROGRAM image", No Negative Prompt, link to example
+[Examples](https://replicate.com/georgedavila/sdxl-beethoven-spectrograms-lora/examples)
+
+- Prompt: "A SPECTROGRAM image", No Negative Prompt, width=1024, height=1024
 ![res1](results/res1.png)
 
-- Prompt: "A SPECTROGRAM image", Negative Prompt: "fuzzy, lone pixels", link to example
+- Prompt: "A SPECTROGRAM image", Negative Prompt: "fuzzy, lone pixels", width=1024, height=1024
 ![res2](results/res2.png)
 
+- Prompt: "A SPECTROGRAM image", No Negative Prompt, width=640, height=480
+![res3](results/res3.png)
+
+- Prompt: "A SPECTROGRAM image", Negative Prompt: "noisy", width=640, height=480
+![res4](results/res4.png)
+
+- Prompt: "A SPECTROGRAM image", Negative Prompt: "noisy", width=1024, height=1024
+![res5](results/res5.png)
+
+- Prompt: "A photo of a dog in the style of SPECTROGRAM", Negative Prompt: "noisy", width=1024, height=1024
+![res6](results/res6.png)
 
