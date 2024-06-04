@@ -22,6 +22,11 @@ Zip `mels` directory and use [sdxl-lora-customize-training](https://replicate.co
 
 ### References 
 
+Putting an audio file in and out of these two source should generate a coherent output albeit with large loss of audio fidelity:
+- Generate spectrograms from audio online: https://convert.ing-now.com/audio-spectrogram-creator/
+- Convert Spectrogram image to audio online: https://alexadam.github.io/demos/img-encode/index.html (be sure to set the time to the time of the input audio)
+
+
 - Data sourced from https://www.chosic.com/free-music/beethoven/
 - https://github.com/OmarMedhat22/Sound-Classification-Mel-Spectrogram/blob/master/mel%20spectrogram.ipynb
 - https://importchris.medium.com/how-to-create-understand-mel-spectrograms-ff7634991056
